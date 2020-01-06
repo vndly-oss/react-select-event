@@ -9,7 +9,7 @@ function getReactSelectContainerFromInput(input: HTMLElement): HTMLElement {
 }
 
 // focus the `react-select` input field
-const focus = (input: HTMLElement) => {
+export const focus = (input: HTMLElement) => {
   fireEvent.focus(input);
   fireEvent.keyDown(input, {
     key: "ArrowDown",
